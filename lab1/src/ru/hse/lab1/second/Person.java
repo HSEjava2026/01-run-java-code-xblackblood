@@ -1,6 +1,12 @@
 package ru.hse.lab1.second;
 
-public class Person { // Обязательно public!
+/**
+ * @author Бирюков Тимофей Александрович
+ * @version 1.0
+ * @since 2026
+ */
+
+public class Person {
     private String name;
     private int age;
 
@@ -9,11 +15,8 @@ public class Person { // Обязательно public!
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
+    public void printInfo() {
+        System.out.println("Имя: " + name);
+        System.out.println("Возраст: " + age);
     }
 }
